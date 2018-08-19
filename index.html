@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>first vue </title>
+</head>
+
+<script src="./node_modules/vue/dist/vue.js"></script>
+<body>
+
+	<div id="app">
+		<!--<input type="text" v-on:input='changetitle'>-->
+		<!--moustache {{}} 长得像胡子的语法 表达式：赋值 取值 三元表达-->
+		<p>{{ message }}</p><hr>
+		<h5>三元表达式测试,匹配一样显示 1 </h5>
+		<p>{{ message==='Hello Vue'?1:0 }}</p>
+
+	</div>
+
+	<script type="text/javascript">
+		// 引入vue 后白给一个Vue构造函数
+		let vm =new Vue({
+		// el挂载点 告诉vue管理哪个scope
+			el:'#app',
+			data:{
+				message:'Hello Vue'
+			
+			}
+
+			// method:{
+			// 	changetitle:function(event){
+			// 		this.message = event.target.value
+			// 	}
+			// }
+
+		});//Object.defineProperty
+
+
+	</script>
+
+</body>
+</html>
