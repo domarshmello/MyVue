@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>first vue </title>
+</head>
+
+<script src="./node_modules/vue/dist/vue.js"></script>
+<body>
+
+<div id="app">
+    <!--表单元素: input checkbox textarea radio selector-->
+    <!--vue的指令 只是dom上的行间属性-->
+    <input type="text" v-model="message"><hr>
+
+    <p>{{ message }}</p>
+
+
+</div>
+
+<script type="text/javascript">
+    // 引入vue 后白给一个Vue构造函数
+    let vm =new Vue({
+        // el挂载点 告诉vue管理哪个scope
+        el:'#app',
+        data:{
+            message:'Hello Vue'
+
+        }
+
+    });//Object.defineProperty
+
+
+</script>
+
+</body>
+</html>
