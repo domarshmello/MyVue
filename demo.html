@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>first vue demo </title>
+</head>
+
+<body>
+
+<div id="app">
+
+    <!--<input type="text" v-model="val" @Keyup="add">-->
+<!--修饰符   .enter  按enter 添加内容 -->
+    <input type="text" v-model="val" @Keyup.enter="add">
+
+    <ul>
+        <li v-for=" (i,index) in arr ">{{ i }}
+            <!--index传给val-->
+            <button @click="remove(index)">删除</button>
+        </li>
+    </ul>
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+
+<script type="text/javascript">
+    // 引入vue 后白给一个Vue构造函数
+    let vm =new Vue({
+
+        // el挂载点 告诉vue管理哪个scope
+        el:'#app',
+
+        methods:{
+
+            // add:function(event){
+            // 	this.message = event.target.value
+            // }
+
+            // add(){
+            //     this.arr.unshift(this.val);
+            //     }
+
+            add(e){
+                // 13 代表enter 修饰符
+                if(e.keyCode === 13){
+
+                    this.arr.unshift(this.val);
+                    this.val='';
+                }
+
+            },
+            //index !== index  将点击选中的项  原理是 索引相等的删除
+            remove(val){
+                this.arr=this.arr.filter( (item,index) => index !== val )
+
+            }
+        },
+
+        data:{
+
+            arr: [],
+            val:'',
+
+        },
+
+    });//Object.defineProperty
+
+
+</script>
+
+</body>
+</html>

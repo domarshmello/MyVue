@@ -9,7 +9,7 @@
 <body>
 
 	<div id="app">
-		<!--<input type="text" v-on:click='changetitle'>-->
+		<input type="text" @click='changetitle'>
 		<!--moustache {{}} 长得像胡子的语法 表达式：赋值 取值 三元表达-->
 		<p>{{ message }}</p><hr>
 		<h5>三元表达式测试,匹配一样显示 1 </h5>
@@ -25,13 +25,13 @@
 			data:{
 				message:'Hello Vue'
 			
-			}
+			},
 
-			// method:{
-			// 	changetitle:function(event){
-			// 		this.message = event.target.value
-			// 	}
-			// }
+			methods:{
+				changetitle:function(event){
+					this.message = event.target.value
+				}
+			}
 
 		});//Object.defineProperty
 
