@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+</head>
+<body>
+
+
+    <div id="app">
+        <!--v-on === @-->
+        <div @click="fn">点击 : {{ message }}</div>
+        <!--如果不传递参数 不写（）会自动传入事件源。-->
+        <!--如果 写（） 手动传入传递属性 $event 。-->
+
+        <input type="text" @click='changeTitle'><hr>
+        <input type="text" @mousedown='change( $event, 1 )'>
+
+    </div>
+
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script>
+
+        //methods和data中的数据会全部放到vm上，且名字不能冲突 methods中的this指向的都是实例
+
+        let vm=new Vue({//根实例
+
+            el:'#app',
+
+            methods:{
+                // fn: ()=>{alert(this)}    //自己没有的话向父级找
+                fn(){ alert(this.a) },
+
+
+                changeTitle:function(event){
+                     		this.message = event.target.value
+                     	},
+                change(event,a){ console.log(event) }
+
+            },
+
+            data:{
+
+                a:2,
+                message:'hello',
+            },
+
+
+        });
+
+    </script>
+
+</body>
+</html>

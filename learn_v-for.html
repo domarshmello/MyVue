@@ -34,6 +34,9 @@
         <!--鸡肋  循环数字-->
         <div v-for=" i in 10 "> {{ i }}</div>
 
+        <!--鸡肋  循环对象-->
+        <div v-for=" (value,key,index) in obj "> {{ key }} : {{value}} : {{index}} </div>
+
     </div>
 
 <script src="node_modules/vue/dist/vue.js"></script>
@@ -42,6 +45,9 @@
     let vm=new Vue({
         el:'#app',
         data:{
+
+            obj:{name:'domarshmello',age:18,address:'ddd'},
+
             fruits:[ {name:'香蕉',color:['blue'] }, {name:'牛油果' , color:['blue','yellow']}, {name:'西瓜' , color:['blue','pink']}]
         }//数组里的对象
 
