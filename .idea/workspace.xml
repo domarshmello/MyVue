@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beff387c-3146-4da5-b8e1-5d9f79a46307" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/learn_v-for.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_v-html.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_v-for.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn_v-for.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,11 +54,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="learn_v-for.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="learn_v-for.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn_v-for.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="431">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+              <folding>
+                <element signature="n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="learn_v-html.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn_v-html.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -92,6 +105,7 @@
         <option value="$PROJECT_DIR$/learn_v-once.html" />
         <option value="$PROJECT_DIR$/learn_v-text.html" />
         <option value="$PROJECT_DIR$/learn_v-for.html" />
+        <option value="$PROJECT_DIR$/learn_v-html.html" />
       </list>
     </option>
   </component>
@@ -110,8 +124,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="391" />
-    <option name="y" value="108" />
+    <option name="x" value="461" />
+    <option name="y" value="117" />
     <option name="width" value="979" />
     <option name="height" value="736" />
   </component>
@@ -180,18 +194,18 @@
       <option name="presentableId" value="Default" />
       <updated>1534686580801</updated>
       <workItem from="1534686583637" duration="7830000" />
-      <workItem from="1534731625067" duration="2342000" />
+      <workItem from="1534731625067" duration="3066000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10172000" />
+    <option name="totallyTimeSpent" value="10896000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="391" y="108" width="979" height="736" extended-state="0" />
+    <frame x="461" y="117" width="979" height="736" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13585292" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23289071" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -296,8 +310,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_v-for.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="431">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="n#ul#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_v-html.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
         </state>
       </provider>
     </entry>

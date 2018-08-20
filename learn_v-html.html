@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue learning</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="demo" v-html="msg"></div>
+
+<script>
+    var app = new Vue({
+        el:'#demo',
+        data:{
+            msg:'<ul> <li>sadf</li> <li>ewq</li> </ul>',
+        }
+    });
+</script>
+
+</body>
+</html>
