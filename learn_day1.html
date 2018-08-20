@@ -5,7 +5,7 @@
     <title>first vue </title>
 </head>
 
-<script src="./node_modules/vue/dist/vue.js"></script>
+
 <body>
 
 <div id="app">
@@ -13,10 +13,17 @@
     <!--vue的指令 只是dom上的行间属性-->
     <input type="text" v-model="message"><hr>
 
-    <p>{{ message }}</p>
+    <p>{{ message }}</p><hr>
+
+    <input type="text" id="input">
 
 
 </div>
+
+
+
+
+<script src="./node_modules/vue/dist/vue.js"></script>
 
 <script type="text/javascript">
     // 引入vue 后白给一个Vue构造函数
@@ -28,7 +35,33 @@
 
         }
 
-    });//Object.defineProperty
+    });
+
+    //Object.defineProperty 原理
+    let obj={};
+    //内部变量转换temp
+    let temp={};
+    Object.defineProperty(obj,'name',{
+        // configurable:true,//是否可删除
+        // value:1
+        get(){
+            // 取值obj ,  es5原生方法
+            // return 1
+            return temp["name"];
+        },
+        set(val){
+            // 赋值obj ,
+            // console.log(val)
+            temp["name"]=val
+            input.value=val;
+        }
+    });
+    input.value=obj.name;//页面加载时，调用get方法
+    input.addEventListener('input',function () {
+        //输入框变化时调用set()
+        obj.name=this.value;
+
+    })
 
 
 </script>

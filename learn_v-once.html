@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+
+    <input type="text" v-model="msg"><hr>
+
+    <div v-text="msg">
+        <!--防止{{}}出现在页面上-->
+    </div>
+
+    <div v-once="msg">
+        <!--只绑定一次 数据再次发生变化时 也不刷新页面 可以对比-->
+        {{msg}}
+    </div>
+
+    <!-- v-html  把html 字符当做html渲染-->
+    </div v-html="p"></div>
+
+<div>
+
+
+
+
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    // 引入vue 后白给一个Vue构造函数
+    let vm =new Vue({
+        // el挂载点 告诉vue管理哪个scope
+        el:'#app',
+        data:{
+            msg:'Hello Vue',
+            p:'<h1>hellkkk</h1>'
+
+        }
+
+    });//Object.defineProperty
+
+</script>
+
+</body>
+</html>

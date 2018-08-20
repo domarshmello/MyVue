@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue 指令以及对象 数组操作</title>
+</head>
+<body>
+
+    <div id="app">
+        <div v-text="msg">
+            <!--防止{{}}出现在页面上-->
+        </div>
+
+        <h1  v-text="'今天是' +year+ ' 年 ' +month+ ' 月 ' +day+ ' 日 '+ hour+'时' "></h1>
+
+        <p>{{ arr }}</p>
+        <p>{{ arr[0] }}</p>
+
+    </div>
+
+
+
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script type="text/javascript">
+        // 引入vue 后白给一个Vue构造函数 vue会循环data中的数据（数据劫持） 依次的增加 getter and setter（数据监听）
+        let vm =new Vue({
+            // el挂载点 告诉vue管理哪个scope
+            el:'#app',
+            data:{
+                msg:'Hello Vue',
+                year : new Date().getFullYear(),
+                month : new Date().getMonth()+1,
+                day:new Date().getDay()+19,
+                hour:new Date().getHours(),
+                a:{school:''},// 方案1 (best) 对象： 使用变量时要初始化 否则新加的属性不会导致页面刷新
+                b:{},
+                arr:[1,2,3],//数组
+
+
+            },
+
+
+        });//Object.defineProperty
+
+
+        //方案2 此方法可以给对象添加响应式的数据变化 添加一个不存在的属性
+        vm.$set(vm.b,'school',1);
+
+        //方案3 进阶方案 替换原对象
+        vm.b={school:'1234',age:32,address:'xxxx'}
+
+        //改变数组中的某一项 是监听不到的 因为数组加不了get and set
+        //vm.arr[0]=100 //错误的操作
+
+        //数组倒序
+        vm.arr.reverse();
+
+        //map
+        vm.arr= vm.arr.map( i => i*3 )
+    </script>
+
+</body>
+</html>
