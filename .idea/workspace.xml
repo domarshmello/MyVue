@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beff387c-3146-4da5-b8e1-5d9f79a46307" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/跑马灯效果.html" beforeDir="false" afterPath="$PROJECT_DIR$/跑马灯效果.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/事件修饰符.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="跑马灯效果.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="跑马灯效果.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/跑马灯效果.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+            <state relative-caret-position="92">
+              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+              <folding>
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="事件修饰符.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/事件修饰符.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -71,6 +84,7 @@
         <option value="$PROJECT_DIR$/admin-ui/index.html" />
         <option value="$PROJECT_DIR$/learn_v-clock.html" />
         <option value="$PROJECT_DIR$/跑马灯效果.html" />
+        <option value="$PROJECT_DIR$/事件修饰符.html" />
       </list>
     </option>
   </component>
@@ -89,8 +103,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="447" />
-    <option name="y" value="79" />
+    <option name="x" value="414" />
+    <option name="y" value="71" />
     <option name="width" value="974" />
     <option name="height" value="702" />
   </component>
@@ -177,18 +191,18 @@
       <workItem from="1534814061276" duration="4102000" />
       <workItem from="1534946280552" duration="1990000" />
       <workItem from="1534953214267" duration="15000" />
-      <workItem from="1534954562034" duration="7791000" />
+      <workItem from="1534954562034" duration="9324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35145000" />
+    <option name="totallyTimeSpent" value="36678000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="447" y="79" width="974" height="702" extended-state="0" />
+    <frame x="414" y="71" width="974" height="702" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991511" visible="true" weight="0.17943338" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991511" visible="true" weight="0.22770199" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -621,8 +635,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/跑马灯效果.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+        <state relative-caret-position="92">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/事件修饰符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
         </state>
       </provider>
     </entry>

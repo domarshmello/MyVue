@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件修饰符</title>
+</head>
+
+<style>
+    .inner{
+        height:150px;
+        background-color: deeppink;
+    }
+</style>
+<body>
+<div id="app">
+
+    <div class="inner" @click="divHandler">
+        <!--.stop 关闭向上冒泡-->
+        <input type="button"  value="点击" @click.stop="btnHandler">
+<!--只想弹出 不想跳转  .prevent -->
+        <a href="www.baidu.com" @click.prevent="aHandler"> ask </a>
+    </div>
+
+</div>
+
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+
+    let vm=new Vue({
+        el:'#app',
+        data:{
+            msg:'小可爱飘起来  别浪 ~ ! ',
+
+
+
+        },//数组里的对象
+
+
+        methods:{
+            divHandler(){
+                console.log("触发 div");
+
+            },
+            btnHandler(){
+                console.log("触发 btn")
+            },
+            aHandler(){
+                console.log("触发 aHandler")
+            }
+
+
+        }
+
+    })
+
+
+</script>
+
+</body>
+</html>
