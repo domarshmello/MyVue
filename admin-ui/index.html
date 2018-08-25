@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title> CMS admin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <style>
+        #particles-js{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background: #eff0f4 no-repeat 50% 50%;
+        }
+    </style>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+<div id="app">
+
+
+<nav class="navbar navbar-inverse ">
+    <!--<div class="container-fluid">-->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <!--<img  src="pic/buttercms.jpg" style="">-->
+            <span class="avatar">
+                <span class="img">
+                    <img src="static/img/logo.jpg" class="img-thumbnail" width='40' height="30" />
+                      cms
+                  </span>
+                </span>
+        </a>
+    </div>
+        <ul class="nav navbar-nav pull-right">
+        <!-- User Account: style can be found in dropdown.less -->
+        <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="static/img/me.jpg"  class="img-circle"  width='40' height="40">
+                <span>登录<i class="caret"></i></span>
+            </a>
+            <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+                <li class="dropdown-header text-center">账号中心</li>
+
+                <li>
+                    <a href="#"><i class="fa fa-user fa-fw pull-right"></i>
+                        <span class="badge badge-info pull-right">1</span> 用户</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-clock-o fa-fw pull-right"></i>
+                        <span class="badge badge-success pull-right">10</span> 提醒 </a>
+
+                    <a data-toggle="modal" href="#modal-user-settings">
+                        <i class="fa fa-cog fa-fw pull-right"></i>
+                        设置
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-sign-out fa-fw pull-right"></i>
+                        <span class="badge badge-info pull-right">1</span>退出登录</a>
+                </li>
+
+
+            </ul>
+        </li>
+    </ul>
+   <!--/.nav-collapse -->
+
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 col-sm-2 col-md-2">
+            <ul class="list-group nav-pills nav-stacked ">
+                <li class="list-group-item active">dashboard</li>
+                <li class="list-group-item " @click="system()">内容管理</li>
+                <li class="list-group-item ">文章管理</li>
+                <li class="list-group-item ">用户管理</li>
+                <li class="list-group-item ">媒体库管理</li>
+                <li class="list-group-item ">调查问卷管理</li>
+                <li class="list-group-item ">表单管理</li>
+                <li class="list-group-item ">模板管理</li>
+            </ul>
+
+        </div>
+        <div class="col-lg-10 col-sm-10 col-md-10">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+            </ol>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title"> 用户列表 </h3>
+                </div>
+                <div class="panel-body">
+                    <!-- Table -->
+                    <table class="table">
+                        ...
+                    </table>
+                </div>
+                <div class="panel-footer">结尾</div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /.container -->
+
+<footer class="sticky-footer fixed-bottom">
+    <div class="container">
+        <div class="text-center">
+            <p>
+                <strong> cms </strong>  design by <a href="https://github.com/domarshmello">unicorn <i class="fab fa-github"></i></a>.
+            </p>
+            <p>
+                <strong> 联系团队  </strong>   <a href="https://github.com/domarshmello"> <i class="fas fa-at"></i></a>.
+            </p>
+        </div>
+    </div>
+</footer>
+
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<!--粒子动画效果-->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+<script>
+
+    particlesJS.load('particles-js', 'static/js/particlesjs-config.json', function () {
+        console.log('背景粒子渲染加载完毕');
+    });
+</script>
+<!--通过vue的指令可以喧嚷数据  不用操作dom vue框架不提倡手动操作dom元素-->
+<script>
+    var vm=new Vue({
+        el:'#app',
+        // data中存放的是el中要用的属性
+        data:{},
+    })
+</script>
+</body>
+</html>

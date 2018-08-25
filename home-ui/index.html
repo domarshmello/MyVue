@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title> CMS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <style>
+        #particles-js{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background: #eff0f4 no-repeat 50% 50%;
+        }
+    </style>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<script src="anime/anime.min.js"></script>
+<!--导入vue.js-->
+<script src="../node_modules/vue/dist/vue.js"></script>
+<body>
+<div id="app">
+
+<nav class="navbar navbar-inverse ">
+    <!--<div class="container-fluid">-->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <!--<img  src="pic/buttercms.jpg" style="">-->
+            <span class="avatar">
+                <span class="img">
+                    <img src="static/img/logo.jpg" width='40' height="30" />
+                      cms
+                  </span>
+                </span>
+        </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        <li ><a class="active"href="#">首页</a></li>
+        <li ><a class="dropdown" href="#">概况</a></li>
+        <li><a  class="dropdown" href="#">文章</a></li>
+        <li><a  class="dropdown" href="#">合作</a></li>
+        <li><a  class="dropdown" href="#">服务</a></li>
+        <li><a  class="dropdown" href="#">联系我们</a></li>
+        <li><a href="#theme">换肤</a></li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span>登录<i class="caret"></i></span>
+                </a>
+                <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+                    <li class="dropdown-header text-center">账号中心</li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-user fa-fw pull-right"></i>
+                            <span class="badge badge-info pull-right">1</span> 用户</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-clock-o fa-fw pull-right"></i>
+                            <span class="badge badge-success pull-right">10</span> 提醒 </a>
+
+                        <a data-toggle="modal" href="#modal-user-settings">
+                            <i class="fa fa-cog fa-fw pull-right"></i>
+                            设置
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-sign-out fa-fw pull-right"></i>
+                            <span class="badge badge-info pull-right">1</span>退出登录</a>
+                    </li>
+
+
+                </ul>
+            </li>
+        </ul>
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="static/img/logo.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="static/img/logo.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img src="static/img/logo.jpg" alt="Third slide">
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next">&rsaquo;</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="text-info ">面板标题</h3>
+                </div>
+                <div class="panel-body">123</div>
+                <div class="panel-footer">45</div>
+            </div>
+        </div>
+
+    </div>
+
+</div><!-- /.container -->
+
+<footer class="sticky-footer fixed-bottom">
+    <div class="container" id="lineDrawing">
+        <div class="text-center">
+            <svg viewBox="0 0 280 100">
+                <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
+                    <path d="M58 80V50.12C57.7 41.6 51.14 35 43 35a15 15 0 0 0 0 30h7.5v15H43a30 30 0 1 1 0-60c16.42 0 29.5 13.23 30 29.89V80H58z" stroke-dasharray="316.85528564453125" style="stroke-dashoffset: 316.401px;"></path>
+                    <path d="M73 80V20H58v60h15z" stroke-dasharray="150" style="stroke-dashoffset: 150px;"></path>
+                    <path d="M58 80V49.77C58.5 33.23 71.58 20 88 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80H58zm75 0V20h-15v60h15z" stroke-dasharray="441.1739501953125" style="stroke-dashoffset: 441.174px;"></path>
+                    <path d="M118 80V49.77C118.5 33.23 131.58 20 148 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15zm-7.5-60a7.5 7.5 0 1 1-7.48 8v-1c.25-3.9 3.5-7 7.48-7z" stroke-dasharray="338.3053894042969" style="stroke-dashoffset: 338.305px;"></path>
+                    <path d="M133 65a15 15 0 0 1-15-15v-7.5h-15V50a30 30 0 0 0 30 30V65zm30 15V49.77C163.5 33.23 176.58 20 193 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15z" stroke-dasharray="406.8699035644531" style="stroke-dashoffset: 406.87px;"></path>
+                    <path d="M238 65a15 15 0 0 1 0-30c8.1 0 14.63 6.53 15 15h-15v15h30V49.89C267.5 33.23 254.42 20 238 20a30 30 0 0 0 0 60V65z" stroke-dasharray="301.8561706542969" style="stroke-dashoffset: 301.856px;"></path>
+                    <path d="M260.48 65a7.5 7.5 0 1 1-7.48 8v-1c.26-3.9 3.5-7 7.48-7z" stroke-dasharray="47.128875732421875" style="stroke-dashoffset: 47.1289px;"></path>
+                </g>
+            </svg>
+            <p>
+                <strong> cms </strong>  design by <a href="https://github.com/domarshmello">unicorn <i class="fab fa-github"></i></a>.
+            </p>
+            <p>
+                <strong> 联系团队  </strong>   <a href="https://github.com/domarshmello"> <i class="fas fa-at"></i></a>.
+            </p>
+
+        </div>
+
+    </div>
+</footer>
+
+</div>
+
+<script src="anime/lineDrawing.js"></script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+<script>
+    var vm=new Vue({
+        el:'#app',
+        // data中存放的是el中要用的属性
+        data:{},
+    })
+</script>
+</body>
+</html>

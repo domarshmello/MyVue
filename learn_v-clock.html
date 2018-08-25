@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-clock</title>
+</head>
+<style>
+    [v-cloak]{
+        display: none;
+    }
+</style>
+<body>
+
+<div id="app">
+    <!-- v-cloak 解决网速慢时 插值表达式闪烁的问题  2：只是替换自己的占位符 --->
+    <p v-cloak>
+       +++++ {{msg}} -----
+    </p>
+<!--v-text 会覆盖原有的文本内容-->
+    <p v-text="msg">你明年的巧克力</p>
+
+    <!---v-html  覆盖内部所有内容-->
+    <div v-html="msg2" >1233</div>
+<!--v-bind 是绑定某个变量  mytitle 属性的值-->
+    <input type="button" title="123" :value="mytitle" >
+    <hr>
+    <!--v-on-->
+    <input type="button" title="123"  @click="show" value="v-on 事件绑定">
+
+
+</div>
+
+
+
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+
+    let vm=new Vue({
+        el:'#app',
+        data:{
+            msg:123,
+            msg2:'<h1>我是个大标题 我大我骄傲</h1>',
+            mytitle:'this is me '
+        },//数组里的对象
+        methods:{
+       show:function(){
+           alert('hello')
+       }
+        }
+
+    })
+
+
+</script>
+</body>
+</html>
