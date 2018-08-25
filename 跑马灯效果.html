@@ -5,7 +5,14 @@
     <title>跑马灯</title>
 </head>
 <body>
-<div id="app"></div>
+<div id="app">
+
+    <input type="button"  value="浪起来" @click="lang">
+    <input type="button"  value="低调" @click="stop">
+
+    <h4> {{msg}} </h4>
+
+</div>
 
 
 
@@ -17,13 +24,50 @@
     let vm=new Vue({
         el:'#app',
         data:{
-            msg:123,
-            msg2:'<h1>我是个大标题 我大我骄傲</h1>',
-            mytitle:'this is me '
+            msg:'小可爱飘起来  别浪 ~ ! ',
+            intervalId:null,
+
+
         },//数组里的对象
+
+        // 1；给 【浪起来】 绑定一个点击事件 v-on：click   ======@click  先拿到msg 字符串
+        // 2；substring  截取字符串  截取第一个 放到最后一个位置
+        // 3：计时器 自动截取
         methods:{
-            show:function(){
-                alert('hello')
+          lang(){
+              // var _this=this;
+              // setInterval(function (){
+              //     var start=_this.msg.substring(0,1);
+              //     var end=_this.msg.substring(1);
+              //     // 尾巴拼接头部 得到新的字符串
+              //     _this.msg= end + start;
+              //
+              //     console.log(this.msg);
+              //
+              // },400 );
+
+
+// es6
+//               判断下是否当前开启定时器
+              if(this.intervalId !=null) return;
+                  this.intervalId= setInterval( () =>{
+                  var start=this.msg.substring(0,1);
+                  var end=this.msg.substring(1);
+                  // 尾巴拼接头部 得到新的字符串
+                  this.msg= end + start;
+                  console.log(this.msg);
+
+              },400 );
+
+
+            },
+            // 停止定时器
+            stop(){
+              clearInterval(this.intervalId);
+// 每当点击停止后 就重置定时器id为空
+                this.intervalId ==null;
+
+
             }
         }
 
