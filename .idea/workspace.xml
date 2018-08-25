@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beff387c-3146-4da5-b8e1-5d9f79a46307" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/闹着玩的计算器.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/闹着玩的计算器.html" beforeDir="false" afterPath="$PROJECT_DIR$/闹着玩的计算器.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +19,11 @@
       <file leaf-file-name="闹着玩的计算器.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/闹着玩的计算器.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+            <state relative-caret-position="225">
+              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="64" selection-end-column="41" />
+              <folding>
+                <element signature="e#813#845#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,12 +183,12 @@
       <workItem from="1534814061276" duration="4102000" />
       <workItem from="1534946280552" duration="1990000" />
       <workItem from="1534953214267" duration="15000" />
-      <workItem from="1534954562034" duration="11464000" />
+      <workItem from="1534954562034" duration="11917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38818000" />
+    <option name="totallyTimeSpent" value="39271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="515" y="99" width="974" height="702" extended-state="0" />
@@ -657,8 +659,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/闹着玩的计算器.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        <state relative-caret-position="225">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="64" selection-end-column="41" />
+          <folding>
+            <element signature="e#813#845#0" />
+          </folding>
         </state>
       </provider>
     </entry>

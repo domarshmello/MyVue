@@ -57,7 +57,12 @@
                         this.result=parseInt(this.n1) / parseInt(this.n2);
                         break;
                 }
-            }
+            },
+
+
+            //eval(执行解析字符串)  投机取巧
+            // var codeStr= 'parseInt(this.n1)' + this.opt +' parseInt(this.n2)' ;
+            // this.result=eval(codeStr);
         }
 
     });//Object.defineProperty
