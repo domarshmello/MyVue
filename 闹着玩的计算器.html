@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-model</title>
+</head>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<body>
+<div id="app">
+
+    <input type="text" v-model="n1">
+
+    <select v-model="opt">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+
+    </select>
+
+    <input type="text" v-model="n2">
+    <input type="button" value="=" @click="calc">
+    <input type="text" v-model="result">
+</div>
+
+
+
+<script type="text/javascript">
+    // 引入vue 后白给一个Vue构造函数
+    let vm =new Vue({
+        // el挂载点 告诉vue管理哪个scope
+        el:'#app',
+        data:{
+            n1:0,
+            n2:0,
+            result:0,
+            opt:'+',
+        },
+        methods:{
+            // 判断操作符
+            calc(){
+                switch (this.opt){
+                    case '+':
+                        this.result=parseInt(this.n1) + parseInt(this.n2);
+                        break;
+
+
+                    case '-':
+                        this.result=parseInt(this.n1) - parseInt(this.n2);
+                        break;
+
+                    case '*':
+                        this.result=parseInt(this.n1) * parseInt(this.n2);
+                        break;
+
+                    case '/':
+                        this.result=parseInt(this.n1) / parseInt(this.n2);
+                        break;
+                }
+            }
+        }
+
+    });//Object.defineProperty
+
+</script>
+
+</body>
+</html>
