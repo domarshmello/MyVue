@@ -18,7 +18,9 @@
         <!--.stop 关闭向上冒泡-->
         <input type="button"  value="点击" @click.stop="btnHandler">
 <!--只想弹出 不想跳转  .prevent -->
-        <a href="www.baidu.com" @click.prevent="aHandler"> ask </a>
+        <a href="http://www.baidu.com" @click.prevent.once ="aHandler"> ask </a>
+        <hr>
+        <a href="http://www.baidu.com" @click.once="aHandler"> ask </a>
     </div>
 
 </div>
